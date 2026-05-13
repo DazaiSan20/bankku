@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bankku - Setting</title>
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#2D60FF"/>
+            <rect x="7" y="10" width="18" height="12" rx="2.5" fill="white" opacity="0.9"/>
+            <rect x="7" y="14" width="18" height="3" fill="#2D60FF" opacity="0.3"/>
+            <rect x="10" y="18" width="5" height="2" rx="1" fill="white" opacity="0.7"/>
+          </svg>
+        </span>
+        <span class="logo-text">Bankku.</span>
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        <span>Transactions</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Accounts</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <span>Investments</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span>Credit Cards</span>
+      </a>
+      <a href="loans.html" class="nav-link">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        <span>Loans</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Services</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+        <span>My Privileges</span>
+      </a>
+      <a href="settings.html" class="nav-link active">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Setting</span>
+      </a>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <div class="layout-content">
+    <header class="header">
+      <div class="header-content">
+        <button class="menu-toggle" id="menuToggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <h1 class="page-title">Setting</h1>
+        <div class="header-actions">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" placeholder="Search for something" class="search-input" />
+          </div>
+          <a href="settings.html" class="icon-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </a>
+          <button class="icon-btn notification-bell">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <span class="notification-badge"></span>
+          </button>
+          <a href="settings.html" class="profile-avatar">
+            <img src="https://i.pravatar.cc/96?img=47" alt="Charlene Reed" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-area">
+      <div class="settings-page">
+        <div class="section-block">
+
+          <!-- TABS -->
+          <div class="settings-tabs">
+            <button class="tab active" onclick="switchTab('profile', this)">Edit Profile</button>
+            <button class="tab" onclick="switchTab('preferences', this)">Preferences</button>
+            <button class="tab" onclick="switchTab('security', this)">Security</button>
+          </div>
+
+          <!-- TAB: Edit Profile -->
+          <div id="tab-profile" class="tab-content">
+            <div class="profile-section">
+              <div class="avatar-upload">
+                <img src="https://i.pravatar.cc/220?img=47"
+                     alt="Charlene Reed" class="avatar-preview" id="avatarPreview" />
+                <label for="avatarInput" class="avatar-edit-btn" title="Change photo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                    <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                  </svg>
+                </label>
+                <input type="file" id="avatarInput" accept="image/*" class="hidden" />
+              </div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" class="form-input" value="Charlene Reed" />
+                </div>
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" class="form-input" value="Charlene Reed" />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-input" value="charlenereed@gmail.com" />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-input" value="password" disabled />
+                </div>
+                <div class="form-group">
+                  <label>Date of Birth</label>
+                  <input type="text" class="form-input" value="25 January 1990" />
+                </div>
+                <div class="form-group">
+                  <label>Present Address</label>
+                  <input type="text" class="form-input" value="San Jose, California, USA" />
+                </div>
+                <div class="form-group">
+                  <label>Permanent Address</label>
+                  <input type="text" class="form-input" value="San Jose, California, USA" />
+                </div>
+                <div class="form-group">
+                  <label>City</label>
+                  <input type="text" class="form-input" value="San Jose" />
+                </div>
+                <div class="form-group">
+                  <label>Postal Code</label>
+                  <input type="text" class="form-input" value="45962" />
+                </div>
+                <div class="form-group">
+                  <label>Country</label>
+                  <input type="text" class="form-input" value="USA" />
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn-primary" onclick="showSaved()">Save</button>
+            </div>
+          </div>
+
+          <!-- TAB: Preferences -->
+          <div id="tab-preferences" class="tab-content" style="display:none">
+            <div class="form-grid" style="max-width:860px">
+              <div class="form-group">
+                <label>Currency</label>
+                <input type="text" class="form-input" value="USD" />
+              </div>
+              <div class="form-group">
+                <label>Time Zone</label>
+                <input type="text" class="form-input" value="(GMT-12:00) International Date Line West" />
+              </div>
+            </div>
+
+            <div class="notification-section">
+              <h3>Notification</h3>
+              <div class="toggle-group">
+                <label class="toggle-item">
+                  <input type="checkbox" class="toggle-input" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">I send or receive digital currency</span>
+                </label>
+                <label class="toggle-item">
+                  <input type="checkbox" class="toggle-input" />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">I receive merchant order</span>
+                </label>
+                <label class="toggle-item">
+                  <input type="checkbox" class="toggle-input" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">There are recommendation for my account</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-primary" onclick="showSaved()">Save</button>
+            </div>
+          </div>
+
+          <!-- TAB: Security -->
+          <div id="tab-security" class="tab-content" style="display:none">
+            <div class="security-section">
+              <div>
+                <h3>Two-factor Authentication</h3>
+                <label class="toggle-item">
+                  <input type="checkbox" class="toggle-input" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Enable or disable two factor authentication</span>
+                </label>
+              </div>
+
+              <div class="password-form">
+                <h3>Change Password</h3>
+                <div class="form-group" style="max-width:520px;margin-bottom:20px">
+                  <label>Current Password</label>
+                  <input type="password" class="form-input" placeholder="••••••••••" />
+                </div>
+                <div class="form-group" style="max-width:520px;margin-bottom:0">
+                  <label>New Password</label>
+                  <input type="password" class="form-input" placeholder="••••••••••" />
+                </div>
+                <div class="form-actions">
+                  <button class="btn-primary" onclick="showSaved()">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+  function switchTab(name, el) {
+    // Hide all
+    document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    // Show selected
+    document.getElementById('tab-' + name).style.display = 'block';
+    el.classList.add('active');
+  }
+
+  function showSaved() {
+    const existing = document.querySelector('.alert');
+    if (existing) existing.remove();
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success';
+    alert.textContent = 'Changes saved successfully!';
+    document.querySelector('.main-area').prepend(alert);
+    setTimeout(() => {
+      alert.style.transition = 'opacity 0.3s';
+      alert.style.opacity = '0';
+      setTimeout(() => alert.remove(), 300);
+    }, 3000);
+  }
+
+  // Avatar preview
+  document.getElementById('avatarInput').addEventListener('change', function () {
+    if (this.files[0]) {
+      document.getElementById('avatarPreview').src = URL.createObjectURL(this.files[0]);
+    }
+  });
+</script>
+</body>
+</html>
