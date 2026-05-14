@@ -10,8 +10,7 @@
 </head>
 <body>
 <div class="app-layout">
-
-  <!-- SIDEBAR -->
+  <!-- sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <a href="index.html" class="logo">
@@ -66,8 +65,7 @@
     </nav>
   </aside>
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-  <!-- MAIN CONTENT -->
+  <!-- main -->
   <div class="layout-content">
     <header class="header">
       <div class="header-content">
@@ -105,15 +103,11 @@
     <main class="main-area">
       <div class="settings-page">
         <div class="section-block">
-
-          <!-- TABS -->
           <div class="settings-tabs">
             <button class="tab active" onclick="switchTab('profile', this)">Edit Profile</button>
             <button class="tab" onclick="switchTab('preferences', this)">Preferences</button>
             <button class="tab" onclick="switchTab('security', this)">Security</button>
           </div>
-
-          <!-- TAB: Edit Profile -->
           <div id="tab-profile" class="tab-content">
             <div class="profile-section">
               <div class="avatar-upload">
@@ -179,8 +173,6 @@
               <button class="btn-primary" onclick="showSaved()">Save</button>
             </div>
           </div>
-
-          <!-- TAB: Preferences -->
           <div id="tab-preferences" class="tab-content" style="display:none">
             <div class="form-grid" style="max-width:860px">
               <div class="form-group">
@@ -218,8 +210,6 @@
               <button class="btn-primary" onclick="showSaved()">Save</button>
             </div>
           </div>
-
-          <!-- TAB: Security -->
           <div id="tab-security" class="tab-content" style="display:none">
             <div class="security-section">
               <div>

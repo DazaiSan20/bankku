@@ -1,8 +1,4 @@
-/* ============================================
-   BANKKU - Banking Dashboard CSS
-   ============================================ */
-
-/* === CSS Variables === */
+/* === Variables === */
 :root {
   --primary:       #2D60FF;
   --primary-dark:  #1A3FBF;
@@ -79,9 +75,7 @@ img { display: block; }
   overflow-x: hidden;
 }
 
-/* ============================================
-   SIDEBAR
-   ============================================ */
+/* SIDEBAR */
 .sidebar {
   width: var(--sidebar-w);
   height: 100vh;
@@ -158,9 +152,7 @@ img { display: block; }
   stroke: var(--primary);
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
+/* HEADER */
 .header {
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);
@@ -258,9 +250,7 @@ img { display: block; }
 
 .menu-toggle { display: none; color: var(--text-mid); padding: 4px; }
 
-/* ============================================
-   SECTION BLOCKS
-   ============================================ */
+/* SECTION BLOCKS */
 .section-block {
   background: var(--bg-card);
   border-radius: var(--radius);
@@ -317,32 +307,26 @@ img { display: block; }
   font-size: 14px;
 }
 
-/* ============================================
-   DASHBOARD GRID
-   ============================================ */
+/* DASHBOARD GRID */
 .dashboard-grid {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Row 1 & 2: wider left, narrower right */
 .grid-col-2 {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 24px;
 }
 
-/* Row 3: narrower left (Quick Transfer), wider right (Balance History) */
 .grid-col-2-rev {
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 24px;
 }
 
-/* ============================================
-   BANK CARDS
-   ============================================ */
+/* BANK CARDS */
 .cards-row {
   display: flex;
   gap: 20px;
@@ -449,9 +433,7 @@ img { display: block; }
   opacity: 0.4;
 }
 
-/* ============================================
-   RECENT TRANSACTIONS
-   ============================================ */
+/* RECENT TRANSACTIONS */
 .transaction-list {
   display: flex;
   flex-direction: column;
@@ -503,9 +485,7 @@ img { display: block; }
 .tx-amount.positive { color: var(--success); }
 .tx-amount.negative { color: var(--danger); }
 
-/* ============================================
-   CHARTS
-   ============================================ */
+/* CHARTS */
 .chart-block {
   position: relative;
   display: flex;
@@ -546,9 +526,7 @@ img { display: block; }
 .legend-dot.deposit  { background: var(--primary); }
 .legend-dot.withdraw { background: var(--secondary); }
 
-/* ============================================
-   QUICK TRANSFER
-   ============================================ */
+/* QUICK TRANSFER */
 .transfer-contacts {
   display: flex;
   align-items: center;
@@ -667,9 +645,7 @@ img { display: block; }
 }
 .btn-send svg { width: 16px; height: 16px; }
 
-/* ============================================
-   LOANS PAGE
-   ============================================ */
+/* LOANS PAGE */
 .loans-page {
   display: flex;
   flex-direction: column;
@@ -780,9 +756,7 @@ img { display: block; }
   color: white;
 }
 
-/* ============================================
-   SETTINGS PAGE
-   ============================================ */
+/* SETTINGS PAGE */
 .settings-page { }
 
 /* Tabs */
@@ -970,9 +944,7 @@ img { display: block; }
 .security-section { display: flex; flex-direction: column; gap: 36px; }
 .password-form .form-group { max-width: 100%; margin-bottom: 0; }
 
-/* ============================================
-   TRANSACTIONS PAGE
-   ============================================ */
+/* TRANSACTIONS PAGE */
 .transactions-page { }
 
 .transaction-filters {
@@ -998,9 +970,7 @@ img { display: block; }
   background: #EEF2FF;
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+/* ANIMATIONS */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-10px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1020,14 +990,11 @@ img { display: block; }
   animation: fadeInUp 0.4s ease both;
 }
 
-/* Stagger sections */
 .dashboard-grid > *:nth-child(1) { animation-delay: 0.05s; }
 .dashboard-grid > *:nth-child(2) { animation-delay: 0.10s; }
 .dashboard-grid > *:nth-child(3) { animation-delay: 0.15s; }
 
-/* ============================================
-   RESPONSIVE BREAKPOINTS
-   ============================================ */
+/* RESPONSIVE BREAKPOINTS */
 
 /* Tablet large (1100px) */
 @media (max-width: 1100px) {
