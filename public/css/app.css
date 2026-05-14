@@ -757,8 +757,6 @@ img { display: block; }
 }
 
 /* SETTINGS PAGE */
-.settings-page { }
-
 /* Tabs */
 .settings-tabs {
   display: flex;
@@ -945,8 +943,6 @@ img { display: block; }
 .password-form .form-group { max-width: 100%; margin-bottom: 0; }
 
 /* TRANSACTIONS PAGE */
-.transactions-page { }
-
 .transaction-filters {
   display: flex;
   gap: 12px;
