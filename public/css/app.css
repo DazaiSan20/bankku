@@ -506,7 +506,16 @@ img { display: block; }
 /* ============================================
    CHARTS
    ============================================ */
-.chart-block { position: relative; }
+.chart-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.chart-canvas-wrapper {
+  position: relative;
+  flex: 1;
+  min-height: 200px;
+}
 .chart-block canvas { width: 100% !important; }
 
 .chart-header {

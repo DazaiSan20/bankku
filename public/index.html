@@ -235,12 +235,12 @@
                 <div class="legend-item"><span class="legend-dot withdraw"></span><span>Withdraw</span></div>
               </div>
             </div>
-            <canvas id="weeklyChart" height="220"></canvas>
+            <div class="chart-canvas-wrapper"><canvas id="weeklyChart"></canvas></div>
           </div>
 
           <div class="section-block chart-block">
             <h2>Expense Statistics</h2>
-            <canvas id="expenseChart" height="260"></canvas>
+            <div class="chart-canvas-wrapper"><canvas id="expenseChart"></canvas></div>
           </div>
 
         </section>
@@ -289,7 +289,7 @@
           <!-- Balance History -->
           <div class="section-block chart-block">
             <h2>Balance History</h2>
-            <canvas id="balanceChart" height="220"></canvas>
+            <div class="chart-canvas-wrapper"><canvas id="balanceChart"></canvas></div>
           </div>
 
         </section>
@@ -316,7 +316,7 @@
       ]
     },
     options: {
-      responsive:true,
+      responsive:true, maintainAspectRatio:false,
       plugins:{ legend:{display:false}, datalabels:{display:false} },
       scales:{
         y:{ beginAtZero:true, max:500, grid:{color:'#F0F0F5'}, ticks:{color:'#718EBF',font:{size:12}} },
@@ -337,7 +337,7 @@
       }]
     },
     options: {
-      responsive:true,
+      responsive:true, maintainAspectRatio:false,
       plugins:{
         legend:{ display:false },
         datalabels:{
@@ -367,7 +367,7 @@
       }]
     },
     options:{
-      responsive:true,
+      responsive:true, maintainAspectRatio:false,
       plugins:{ legend:{display:false}, datalabels:{display:false} },
       scales:{
         y:{ beginAtZero:true, max:800, grid:{color:'#F0F0F5'}, ticks:{color:'#718EBF',font:{size:12}} },
