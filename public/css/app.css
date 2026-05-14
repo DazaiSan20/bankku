@@ -230,6 +230,7 @@ img { display: block; }
 .icon-btn:hover { border-color: var(--primary); color: var(--primary); }
 
 .notification-bell { position: relative; }
+.notification-bell svg { stroke: #FF4B4A; }
 .notification-badge {
   position: absolute;
   top: 9px; right: 9px;
@@ -852,6 +853,25 @@ img { display: block; }
   color: var(--text-dark);
 }
 .form-input.error { border-color: var(--danger); }
+
+/* Select wrapper with chevron */
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper .form-input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 44px;
+}
+.select-wrapper .select-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-mid);
+}
 .form-error {
   display: block;
   font-size: 12px;
