@@ -140,8 +140,8 @@ img { display: block; }
   flex-shrink: 0;
   width: 22px;
   height: 22px;
-  stroke: currentColor;
-  fill: none;
+  fill: currentColor;
+  stroke: none;
 }
 
 .nav-link:hover {
