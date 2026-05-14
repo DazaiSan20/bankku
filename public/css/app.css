@@ -711,6 +711,7 @@ img { display: block; }
 
 .data-table {
   width: 100%;
+  min-width: 640px;
   border-collapse: collapse;
 }
 .data-table th {
@@ -1006,7 +1007,7 @@ img { display: block; }
    RESPONSIVE BREAKPOINTS
    ============================================ */
 
-/* Tablet */
+/* Tablet large (1100px) */
 @media (max-width: 1100px) {
   .grid-col-2,
   .grid-col-2-rev {
@@ -1014,6 +1015,76 @@ img { display: block; }
   }
   .loan-type-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .data-table th,
+  .data-table td {
+    padding: 12px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+/* Tablet medium — sidebar still visible, content gets narrow */
+@media (max-width: 960px) {
+  .loan-type-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .loan-type-card {
+    padding: 16px 18px;
+    gap: 12px;
+  }
+  .loan-type-icon {
+    width: 46px;
+    height: 46px;
+  }
+  .loan-type-amount {
+    font-size: 16px;
+  }
+  .loan-type-label {
+    font-size: 12px;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .btn-repay {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .main-area {
+    padding: 24px 24px;
+  }
+}
+
+/* Tablet small — collapse sidebar */
+@media (max-width: 850px) {
+  .sidebar {
+    left: -260px;
+    box-shadow: none;
+  }
+  .sidebar.open {
+    left: 0;
+    box-shadow: var(--shadow-lg);
+  }
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 199;
+  }
+  .sidebar-overlay.visible { display: block; }
+  .layout-content { margin-left: 0; }
+  .menu-toggle { display: flex; }
+  .loan-type-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .data-table th,
+  .data-table td {
+    padding: 10px 12px;
+    font-size: 13px;
   }
 }
 
